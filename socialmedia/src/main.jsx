@@ -21,12 +21,14 @@ const currentUser=true;
 const Layout =() =>{
   return(
     <div className="">
-      <Navbar/>
-      <div style={{display:"flex"}}>
-        <Leftbar/>
-        <Outlet/>
-        <Rightbar/>
-      </div>
+       <Navbar />
+        <div style={{ display: "flex" }}>
+          <Leftbar />
+          <div style={{ flex: 6 }}>
+            <Outlet />
+          </div>
+          <Rightbar />
+        </div>
     </div>
   )
 }
